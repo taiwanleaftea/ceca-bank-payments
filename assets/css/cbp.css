@@ -1,0 +1,48 @@
+.entry-header {
+  padding-bottom: 0 !important;
+}
+
+.order_details {
+  margin-bottom: 2rem !important;
+}
+
+.alert {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.alert-info {
+  border-color: #958b78;
+  background-color: #f8f8f8;
+}
+
+.alert-warning {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.mr-1 {
+  margin-right: 1rem;
+}
+.mr-2 {
+  margin-right: 2rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}

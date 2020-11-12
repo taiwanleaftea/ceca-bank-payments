@@ -1,0 +1,126 @@
+# Copyright (C) 2020 Mildau Beautry Solutions
+# This file is distributed under the same license as the CECA BAnk Payment Gateway package.
+msgid ""
+msgstr ""
+"Project-Id-Version: CECA Bank Payment Gateway 1.0.0\n"
+"POT-Creation-Date: 2020-11-09 14:59:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+
+msgid "Payment by Card (ABANCA)"
+msgstr ""
+
+msgid "CECA Bank Payment Gateway"
+msgstr ""
+
+msgid "Enable Card Payment (CECA Bank)"
+msgstr ""
+
+msgid "Payment method title that the customer will see on your website."
+msgstr ""
+
+msgid "Credit Card / Debit Card"
+msgstr ""
+
+msgid "Payment method description that the customer will see on your website."
+msgstr ""
+
+msgid "Credit Card, Debit Card and EURO 6000 Card. You will be transferred to the secure server to make a payment. Your bank may ask you for the secure code to confirm the payment."
+msgstr ""
+
+msgid "Multi Currency Support"
+msgstr ""
+
+msgid "Multi-currency support in TPV Dashboard must be enabled."
+msgstr ""
+
+msgid "Default Currency"
+msgstr ""
+
+msgid "Default currency must be the same, as the shop default currency."
+msgstr ""
+
+msgid "Default Language"
+msgstr ""
+
+msgid "Default language for the payment form (if the language is not supported by the payment gateway)."
+msgstr ""
+
+msgid "Write debug information to the log."
+msgstr ""
+
+msgid "Order Status"
+msgstr ""
+
+msgid "Order status after the successful payment."
+msgstr ""
+
+msgid "Notify URL"
+msgstr ""
+
+msgid "Enter this URL in TPV Dashboard."
+msgstr ""
+
+msgid "Environment"
+msgstr ""
+
+msgid "Sandbox"
+msgstr ""
+
+msgid "Production"
+msgstr ""
+
+msgid "Sandbox Credentials"
+msgstr ""
+
+msgid "Acquirer BIN"
+msgstr ""
+
+msgid "Merchant ID"
+msgstr ""
+
+msgid "Terminal ID"
+msgstr ""
+
+msgid "Encryption Key"
+msgstr ""
+
+msgid "Production Credentials"
+msgstr ""
+
+# Frontend
+msgid "Warning: The payment gateway is in Sandbox Mode. Your account will not be charged and your order will not be fulfilled."
+msgstr ""
+
+msgid "Thank you for your order, please click the button to pay by card."
+msgstr ""
+
+msgid "Pay"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+# Errors
+msgid "CECA Payment Gateway Error (webhook)."
+msgstr ""
+
+msgid "cancelled"
+msgstr ""
+
+msgid "Webhook error"
+msgstr ""
+
+msgid "Payment completed with reference:"
+msgstr ""
+
+msgid "POST data is empty"
+msgstr ""
+
+# Debug
+msgid "CECA Bank Webhook Received"
+msgstr ""
+
