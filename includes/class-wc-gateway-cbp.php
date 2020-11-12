@@ -86,7 +86,7 @@ class WC_Gateway_CBP extends WC_Payment_Gateway {
 		$this->icon               = site_url() . '/wp-content/plugins/ceca-bank-payments/assets/img/MCV-logo.png';
 		$this->method_title       = __( 'Payment by Card (ABANCA)', 'ceca-bank-payments' );
 		$this->method_description = __( 'CECA Bank Payment Gateway', 'ceca-bank-payments' );
-		$this->notify_url         = add_query_arg( 'wc-api', 'wc_gateway_cbp_webhook', home_url( '/' ) );
+		$this->notify_url         = add_query_arg( 'wc-api', 'WC_Gateway_CBP', home_url( '/' ) );
 
 		$this->has_fields = false;
 
@@ -130,7 +130,7 @@ class WC_Gateway_CBP extends WC_Payment_Gateway {
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ) );
 
 		// Payment listener/API hook
-		add_action( 'woocommerce_api_cbp_webhook', array( $this, 'cbp_webhook' ) );
+		add_action( 'woocommerce_api_' . strtolower( get_class( $this ) ), array( $this, 'cbp_webhook' ) );
 	}
 
 	public function init_form_fields() {
@@ -394,7 +394,7 @@ class WC_Gateway_CBP extends WC_Payment_Gateway {
 		}
 
 		$fields = array( 'MerchantID', 'AcquirerBIN', 'TerminalID', 'Num_operacion', 'Importe', 'TipoMoneda', 'Exponente', 'Referencia' );
-		$key = '';
+		$key = $this->get_option( 'encryption_key_' . $this->environment );
 
 		foreach ($fields as $field) {
 			if ( empty( $post[$field] ) ) {
